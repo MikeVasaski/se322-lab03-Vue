@@ -7,10 +7,8 @@
 
 <script>
 // @ is an alias to /src
-import AuthorCard from '@/components/AuthorCard.vue'
 import EventCard from '@/components/EventCard.vue'
-
-
+import Oname from '@/components/Oname.vue'
 export default {
   name: 'HomeView',
   components: {
