@@ -1,7 +1,7 @@
 <template>
     <div class="author-card">
-        <p>category</p>
-        <p>organizer</p>
+        <p>{{author.category}}</p>
+        <p>{author.organizer}</p>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
     name: 'Author',
     props: {
-        acthor: {
+        author: {
             type: Object,
             required: true
         }
