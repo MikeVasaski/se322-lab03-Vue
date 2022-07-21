@@ -2,11 +2,16 @@
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
+  <div class="author">
+    <AuthorCard />
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import AuthorCard from '@/components/AuthorCard.vue'
 import EventCard from '@/components/EventCard.vue'
+
 
 export default {
   name: 'HomeView',
