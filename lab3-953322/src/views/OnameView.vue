@@ -1,18 +1,17 @@
 <template>
   <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
+    <h1>Events For Good</h1>
+
     <OnameCard v-for="author in events" :key="author.id" :author="author" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import EventCard from '@/components/EventCard.vue'
 import OnameCard from '@/components/Oname.vue'
 export default {
   name: 'HomeView',
   components: {
-    EventCard,
     OnameCard
   },
   data() {
