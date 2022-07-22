@@ -1,13 +1,13 @@
 <template>
   <div class="Oname">
     <p>{{ author.category }}</p>
-    <p>{author.organizer}</p>
+    <p>{{ author.organizer }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Oname',
+  name: 'OnameCard',
   props: {
     author: {
       type: Object,
